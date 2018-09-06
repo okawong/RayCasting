@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import com.okawong.entity.Coordinate;
 import com.okawong.entity.Edge;
-import com.okawong.main.RayCastImpl;
+import com.okawong.raycast.RayCastImpl;
 
 public class RayCastTest {
 	private RayCastImpl rayCastImpl;

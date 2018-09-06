@@ -1,4 +1,4 @@
-package com.okawong.main;
+package com.okawong.raycast;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -19,7 +19,7 @@ public class RayCastImpl implements RayCast{
 		}
 		return false;
 	}
-	public boolean pointOnEdge(Edge e, Coordinate c) {
+	protected boolean pointOnEdge(Edge e, Coordinate c) {
 		double slope = e.getSlope();
 		double intersect = e.getYIntersect();
 		double expectedX = (c.getY() - intersect)/slope;
