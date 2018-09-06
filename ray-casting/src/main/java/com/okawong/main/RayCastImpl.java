@@ -1,12 +1,15 @@
 package com.okawong.main;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
+import com.okawong.entity.Edge;
 
 public class RayCastImpl implements RayCast{
-
-	public void addEdge(List<List<Integer>> coordinates) {
-		// TODO Auto-generated method stub
-		
+	Set<Edge> edgeSet = new HashSet<>();
+	public void addEdge(Edge edge) {
+		edgeSet.add(edge);
 	}
 
 	public boolean insideZone(List<Integer> coordinate) {
