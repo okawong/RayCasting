@@ -20,7 +20,7 @@ public class RayCastImpl implements RayCast{
 		return false;
 	}
 	private boolean pointOnEdge(Edge e, Coordinate c) {
-		int slope = e.getSlope();
+		double slope = e.getSlope();
 		return false;
 	}
 }

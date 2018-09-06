@@ -1,22 +1,22 @@
 package com.okawong.entity;
 
 public class Coordinate {
-	private int X;
-	private int Y;
-	public Coordinate(int X, int Y) {
+	private double X;
+	private double Y;
+	public Coordinate(double X, double Y) {
 		this.setX(X);
 		this.setY(Y);
 	}
-	public int getX() {
+	public double getX() {
 		return X;
 	}
-	public void setX(int x) {
+	public void setX(double x) {
 		X = x;
 	}
-	public int getY() {
+	public double getY() {
 		return Y;
 	}
-	public void setY(int y) {
+	public void setY(double y) {
 		Y = y;
 	}
 	@Override 
@@ -29,6 +29,6 @@ public class Coordinate {
 		}
 		
 		Coordinate c = (Coordinate) o;
-		return Integer.compare(X, c.X) == 0 && Integer.compare(Y, c.Y) == 0;
+		return Double.compare(X, c.X) == 0 && Double.compare(Y, c.Y) == 0;
 	}
 }
