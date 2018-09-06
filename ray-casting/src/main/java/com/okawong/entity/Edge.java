@@ -19,6 +19,14 @@ public class Edge {
 	public void setEnd(Coordinate end) {
 		this.end = end;
 	}
+	public int getSlope() {
+		return (end.getY() - start.getY())/(end.getX() - start.getY());
+	}
+	
+	public int getYIntersect() {
+		int expectedY = getSlope()*start.getX();
+		return -1;
+	}
 	@Override 
 	public boolean equals(Object o) {
 		if(o == this) {

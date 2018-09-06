@@ -1,9 +1,9 @@
 package com.okawong.main;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
+import com.okawong.entity.Coordinate;
 import com.okawong.entity.Edge;
 
 public class RayCastImpl implements RayCast{
@@ -12,9 +12,15 @@ public class RayCastImpl implements RayCast{
 		edgeSet.add(edge);
 	}
 
-	public boolean insideZone(List<Integer> coordinate) {
-		// TODO Auto-generated method stub
+	public boolean insideZone(Coordinate coordinate) {
+		int intersections = 0;
+		for(Edge edge : edgeSet) {
+			
+		}
 		return false;
 	}
-
+	private boolean pointOnEdge(Edge e, Coordinate c) {
+		int slope = e.getSlope();
+		return false;
+	}
 }
