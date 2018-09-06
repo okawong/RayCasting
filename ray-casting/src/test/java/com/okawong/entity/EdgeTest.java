@@ -10,6 +10,7 @@ public class EdgeTest {
 	@Before
 	public void init(){
 		edge = null;
+		
 	}
 	@Test
 	public void slopeCalculations() {
