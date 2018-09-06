@@ -19,8 +19,10 @@ public class RayCastImpl implements RayCast{
 		}
 		return false;
 	}
-	private boolean pointOnEdge(Edge e, Coordinate c) {
+	public boolean pointOnEdge(Edge e, Coordinate c) {
 		double slope = e.getSlope();
-		return false;
+		double intersect = e.getYIntersect();
+		double expectedX = (c.getY() - intersect)/slope;
+		return expectedX == c.getX();
 	}
 }
